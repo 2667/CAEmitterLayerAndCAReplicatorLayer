@@ -1,0 +1,2 @@
+# CAEmitterLayerAndCAReplicatorLayer
+iOS 这里实现了发射器的功能和使用CAReplicatorLayer实现了粒子效果
