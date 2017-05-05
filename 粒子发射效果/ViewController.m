@@ -7,14 +7,52 @@
 //
 
 #import "ViewController.h"
+#import "MagicView.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *draw;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *fill;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *clear;
+@property (nonatomic,strong) MagicView *magicView;
+
 @property(nonatomic,strong) CAEmitterLayer *emitter;
 @property(nonatomic,strong) CAEmitterCell *cell0;
 @property(nonatomic,strong) CAEmitterCell *cell1;
 @end
 
 @implementation ViewController
+- (MagicView *)magicView {
+    if (_magicView == nil) {
+        _magicView = [[MagicView alloc] initWithFrame:self.view.bounds];
+        [self.view addSubview:_magicView];
+        _magicView.hidden = YES;
+    }
+    return _magicView;
+}
+- (IBAction)fillAction:(UIBarButtonItem *)sender {
+    [self.magicView start];
+}
+- (IBAction)clearAction:(UIBarButtonItem *)sender {
+    [self.magicView reDraw];
+}
+- (IBAction)drawAction:(UIBarButtonItem *)sender {
+    self.magicView.hidden = !self.magicView.hidden;
+    if (self.magicView.hidden) {
+        sender.title = @"draw";
+        self.fill.title = @"";
+        self.fill.enabled = NO;
+        self.clear.title = @"";
+        self.clear.enabled = NO;
+        self.navigationItem.title = @"CAEmitterLayer";
+    } else {
+        sender.title = @"cancel";
+        self.fill.title = @"fill";
+        self.fill.enabled = YES;
+        self.clear.title = @"clear";
+        self.clear.enabled = YES;
+        self.navigationItem.title = @"CAReplicatorLayer";
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

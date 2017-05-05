@@ -17,6 +17,7 @@
 		494FE1501EBC282900A8BCF9 /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 494FE14F1EBC282900A8BCF9 /* ______UITests.m */; };
 		494FE15E1EBC2A2700A8BCF9 /* heart-icons-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 494FE15D1EBC2A2700A8BCF9 /* heart-icons-0.png */; };
 		494FE1601EBC3ABC00A8BCF9 /* heart-icons-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 494FE15F1EBC3ABC00A8BCF9 /* heart-icons-8.png */; };
+		494FE1631EBC542C00A8BCF9 /* MagicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 494FE1621EBC542C00A8BCF9 /* MagicView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		494FE1511EBC282900A8BCF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		494FE15D1EBC2A2700A8BCF9 /* heart-icons-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart-icons-0.png"; sourceTree = "<group>"; };
 		494FE15F1EBC3ABC00A8BCF9 /* heart-icons-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart-icons-8.png"; sourceTree = "<group>"; };
+		494FE1611EBC542C00A8BCF9 /* MagicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicView.h; sourceTree = "<group>"; };
+		494FE1621EBC542C00A8BCF9 /* MagicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				494FE15D1EBC2A2700A8BCF9 /* heart-icons-0.png */,
 				494FE12D1EBC282900A8BCF9 /* AppDelegate.h */,
 				494FE12E1EBC282900A8BCF9 /* AppDelegate.m */,
+				494FE1611EBC542C00A8BCF9 /* MagicView.h */,
+				494FE1621EBC542C00A8BCF9 /* MagicView.m */,
 				494FE1301EBC282900A8BCF9 /* ViewController.h */,
 				494FE1311EBC282900A8BCF9 /* ViewController.m */,
 				494FE1331EBC282900A8BCF9 /* Main.storyboard */,
@@ -286,6 +291,7 @@
 			files = (
 				494FE1321EBC282900A8BCF9 /* ViewController.m in Sources */,
 				494FE12F1EBC282900A8BCF9 /* AppDelegate.m in Sources */,
+				494FE1631EBC542C00A8BCF9 /* MagicView.m in Sources */,
 				494FE12C1EBC282900A8BCF9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +444,7 @@
 				DEVELOPMENT_TEAM = 5H3BP4TR2W;
 				INFOPLIST_FILE = "粒子发射效果/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "xinweizhou.com.------";
+				PRODUCT_BUNDLE_IDENTIFIER = xinweizhou.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -450,7 +456,7 @@
 				DEVELOPMENT_TEAM = 5H3BP4TR2W;
 				INFOPLIST_FILE = "粒子发射效果/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "xinweizhou.com.------";
+				PRODUCT_BUNDLE_IDENTIFIER = xinweizhou.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -524,6 +530,7 @@
 				494FE1561EBC282900A8BCF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		494FE1571EBC282900A8BCF9 /* Build configuration list for PBXNativeTarget "粒子发射效果Tests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +539,7 @@
 				494FE1591EBC282900A8BCF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		494FE15A1EBC282900A8BCF9 /* Build configuration list for PBXNativeTarget "粒子发射效果UITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +548,7 @@
 				494FE15C1EBC282900A8BCF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
